@@ -1,22 +1,18 @@
 describe('angular-gs-capitalize', function () {
   beforeEach(module('gs.capitalize'));
 
-  var $scope;
+  var capitalize;
 
-  beforeEach(inject(function ($rootScope) {
-    $scope = $rootScope.$new();
+  beforeEach(inject(function (_capitalize_) {
+    capitalize = _capitalize_;
   }));
 
   // happy path(s)
-  it('', function () {
-  });
-
-  // null input path
-  it('', function () {
-  });
-
-  // wrong type path
-  it('', function () {
+  it('capitalizes strings', function () {
+    expect(capitalize('gabe')).toBe('Gabe');
+    expect(capitalize('Gabe')).toBe('Gabe');
+    expect(capitalize('GAbe')).toBe('GAbe');
+    expect(capitalize('gAbe')).toBe('GAbe');
   });
 
 });

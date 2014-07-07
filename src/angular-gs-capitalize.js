@@ -4,6 +4,11 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
 
 (function(window, angular, undefined) {'use strict';
 
-angular.module('gs.capitalize', []);
+angular.module('gs.capitalize', [])
+.factory('capitalize', [function () {
+  return function (str) {
+    return str[0].toUpperCase() + str.slice(1);
+  };
+}]);
 
 })(window, window.angular);

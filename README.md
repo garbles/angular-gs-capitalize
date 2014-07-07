@@ -15,3 +15,10 @@ Include the package in your application:
 ```javascript
 angular.module('app', ['gs.capitalize']);
 ```
+
+Inject the `capitalize` service into your application and pass in a string to use
+
+```javascript
+app.controller(function (capitalize) {
+  capitalize('gabe') // => Gabe
+});
