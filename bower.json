@@ -1,12 +1,15 @@
 {
   "name": "angular-gs-capitalize",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [
     "Gabriel Scholz <info@garbl.es>"
   ],
   "description": "Capitalizes strings",
   "main": "./build/angular-gs-capitalize.js",
-  "keywords": ["capitalize","angular"],
+  "keywords": [
+    "capitalize",
+    "angular"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/garbles/angular-gs-capitalize",
   "ignore": [
